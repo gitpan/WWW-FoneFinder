@@ -6,7 +6,7 @@ use warnings;
 
 use LWP::UserAgent;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -91,7 +91,6 @@ sub query
     my $data = $1;
     $data =~ s#</?(a|img|br).*?>##gi;
     $data =~ s#<tr>\s*$##i;
-    print $data;
     my @data = split(/<tr>/i, $data);
     shift(@data); # header
     my @list;

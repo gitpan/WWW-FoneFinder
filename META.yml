@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                WWW-FoneFinder
-version:             0.01
+version:             0.02
 abstract:            Provides an interface to FoneFinder.net
 license:             ~
 author:              
